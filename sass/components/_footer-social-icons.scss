@@ -1,0 +1,20 @@
+.footer__social {
+  margin-left: 70px;
+}
+.social {
+  display: flex;
+  justify-content: space-evenly;
+}
+.social__link {
+  fill: var(--main-background-hero-adress-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  &:hover,
+  &:focus {
+    fill: var(--main-background-hero-adress-color);
+    background-color: var(--blue-accent);
+  }
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}

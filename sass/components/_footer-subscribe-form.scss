@@ -1,0 +1,45 @@
+.footer__subscribe {
+  margin-left: 93px;
+}
+.subscribe {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.subscribe-form__input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  background-color: inherit;
+  font-size: 16px;
+  line-height: 1.25;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* Кнопка відправки форми футер */
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 6%;
+  color: var(--main-background-hero-adress-color);
+  background-color: var(--blue-accent);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.subscribe-button__image {
+  display: block;
+  fill: var(--main-background-hero-adress-color);
+  margin-left: 10px;
+}

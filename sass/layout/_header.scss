@@ -1,0 +1,11 @@
+.header__section {
+  padding-top: 0;
+  border-bottom: 1px solid #ececec;
+}
+.header {
+  background-color: var(--main-background-hero-adress-color);
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
