@@ -216,12 +216,12 @@ body {
   justify-content: space-evenly;
 }
 
-.social__link {
+.footer__social .social__link {
   fill: var(--main-background-hero-adress-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social__link:hover, .social__link:focus {
+.footer__social .social__link:hover, .footer__social .social__link:focus {
   fill: var(--main-background-hero-adress-color);
   background-color: var(--blue-accent);
 }
@@ -289,6 +289,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -506,6 +508,7 @@ textarea::placeholder {
   letter-spacing: 6%;
   color: var(--main-background-hero-adress-color);
   background-color: var(--blue-accent);
+  border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -615,8 +618,12 @@ textarea::placeholder {
   background-color: #2f303acc;
 }
 
-.team {
+.team-section {
   background-color: var(--team-section-background-color);
+  padding-bottom: 94px;
+}
+
+.team {
   margin-top: 0;
   margin-bottom: 0;
 }

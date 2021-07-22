@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-evenly;
 }
-.social__link {
+.footer__social .social__link {
   fill: var(--main-background-hero-adress-color);
   background-color: rgba(255, 255, 255, 0.1);
   &:hover,
