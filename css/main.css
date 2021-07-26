@@ -576,6 +576,34 @@ textarea::placeholder {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .feature-section {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .features {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .features__item {
     width: 450px;
@@ -584,24 +612,20 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .features__item {
-    width: 354px;
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .features__item:not(:last-child) {
+@media screen and (max-width: 767px) {
+  :not(:last-child) {
     margin-bottom: 30px;
   }
-  .features__item:last-child {
-    margin-bottom: 60px;
-  }
 }
 
-@media screen and (min-width: 1200px) {
-  .features__item {
-    max-width: 270px;
-    margin-bottom: 0;
-  }
+@media screen and (max-width: 767px) and (min-width: 1200px) {
+  max-width: 270px;
+  margin-bottom: 0;
 }
 
 .features__title {
@@ -737,38 +761,80 @@ textarea::placeholder {
   padding-bottom: 30px;
 }
 
+@media screen and (max-width: 1199px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .clients {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 480px) {
   .clients__list {
     display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 0;
-    margin: 0;
   }
+}
+
+@media screen and (min-width: 480px) {
+  .clients__item {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: 33.333%;
+  }
+}
+
+.clients__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  padding: 0;
+  background-color: inherit;
+  fill: var(--team-clients-icon-color);
+  border: solid 1px var(--team-clients-icon-color);
+  border-radius: 4px;
+  transition: fill var(--transition-time) var(--timing-function);
+}
+
+.clients__button:hover, .clients__button:focus {
+  fill: var(--blue-accent);
+  border: solid 1px var(--blue-accent);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
   .clients__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 170px;
-    height: 92px;
-    padding: 0;
-    background-color: inherit;
-    fill: var(--team-clients-icon-color);
-    border: solid 1px var(--team-clients-icon-color);
-    border-radius: 4px;
-    transition: fill var(--transition-time) var(--timing-function);
   }
-  .clients__button:hover, .clients__button:focus {
-    fill: var(--blue-accent);
-    border: solid 1px var(--blue-accent);
-    cursor: pointer;
-  }
-  .clients__image {
-    display: inline-block;
-  }
+}
+
+.clients__image {
+  display: inline-block;
 }
 
 .gallery__title {
