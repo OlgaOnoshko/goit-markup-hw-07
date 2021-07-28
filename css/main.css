@@ -226,8 +226,19 @@ body {
   fill: var(--blue-accent);
 }
 
-.footer__social {
-  margin-left: 70px;
+@media screen and (max-width: 767px) {
+  .footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__social {
+    margin-left: 70px;
+  }
 }
 
 .social {
@@ -491,27 +502,54 @@ textarea::placeholder {
   cursor: pointer;
 }
 
-.footer__subscribe {
-  margin-left: 93px;
+@media screen and (max-width: 1199px) {
+  .footer__subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__subscribe {
+    margin-left: 93px;
+  }
 }
 
 .subscribe {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 }
 
-.subscribe-form__input {
-  width: 358px;
-  height: 50px;
-  padding-left: 16px;
-  background-color: inherit;
-  font-size: 16px;
-  line-height: 1.25;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .subscribe-form__input {
+    width: 450px;
+    height: 50px;
+    padding-left: 16px;
+    margin-bottom: 20px;
+    background-color: inherit;
+    font-size: 16px;
+    line-height: 1.25;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form__input {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 /* Кнопка відправки форми футер */
@@ -584,7 +622,7 @@ textarea::placeholder {
 
 @media screen and (min-width: 480px) {
   .features {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -601,6 +639,7 @@ textarea::placeholder {
   .features {
     display: flex;
     flex-wrap: nowrap;
+    width: 1200px;
   }
 }
 
@@ -618,14 +657,16 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 767px) {
-  :not(:last-child) {
+  .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 767px) and (min-width: 1200px) {
-  max-width: 270px;
-  margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .features__item {
+    max-width: 270px;
+    margin-bottom: 0;
+  }
 }
 
 .features__title {
@@ -731,6 +772,20 @@ textarea::placeholder {
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (min-width: 480px) {
+  .team__card {
+    width: 450px;
+    height: 622px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__card {
+    width: 354px;
+    height: 536px;
+  }
+}
+
 .team__name {
   color: var(--secondary-header-color);
   font-weight: 500;
@@ -786,6 +841,7 @@ textarea::placeholder {
   .clients__list {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -798,13 +854,22 @@ textarea::placeholder {
 
 @media screen and (min-width: 480px) {
   .clients__item {
-    flex-basis: 50%;
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .clients__item {
-    flex-basis: 33.333%;
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    flex-wrap: nowrap;
+    flex-basis: 170px;
   }
 }
 
@@ -952,16 +1017,44 @@ textarea::placeholder {
   transition: transform var(--transition-time) var(--timing-function);
 }
 
+.footer__container {
+  display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .footer {
   background-color: var(--hero-footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+}
+
 .footer__address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .link {
@@ -1001,7 +1094,9 @@ textarea::placeholder {
   margin-bottom: 20px;
 }
 
-.footer__container {
-  display: flex;
+@media screen and (max-width: 767px) {
+  .footer__title {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

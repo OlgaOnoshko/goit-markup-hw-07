@@ -1,23 +1,43 @@
 .footer__subscribe {
-  margin-left: 93px;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 .subscribe {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .subscribe-form__input {
-  width: 358px;
-  height: 50px;
-  padding-left: 16px;
-  background-color: inherit;
-  font-size: 16px;
-  line-height: 1.25;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 50px;
+    padding-left: 16px;
+    margin-bottom: 20px;
+    background-color: inherit;
+    font-size: 16px;
+    line-height: 1.25;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 /* Кнопка відправки форми футер */
