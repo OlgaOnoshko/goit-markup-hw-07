@@ -1,12 +1,12 @@
 .feature-section {
-  @media screen and (min-width: 768px) {
-    margin-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
   }
 }
 .features {
-  @media screen and (min-width: 480px) {
-    padding-bottom: 60px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   padding-bottom: 60px;
+  // }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -62,12 +62,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 120px;
   margin-bottom: 30px;
   background-color: var(--team-section-background-color);
 
   @media screen and (min-width: 480px) {
     width: 450px;
-    height: 120px;
   }
 
   @media screen and (min-width: 768px) {

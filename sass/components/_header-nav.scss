@@ -1,6 +1,10 @@
 .navigation {
   display: flex;
   margin-left: 93px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .navigation__item + .navigation__item {
   margin-left: 50px;
