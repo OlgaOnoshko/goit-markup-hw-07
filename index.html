@@ -22,15 +22,15 @@
             <a href="" class="logo header__logo">
                 <span class="header__logo--span">Web</span>Studio
             </a>
-            <button type="button" class="menu-button is-open"> 
-                <svg width="18.67" height="18.67" aria-label="Выключатель мобильного меню">
+            <button type="button" class="menu-button" data-menu-open> 
+                <svg width="24" height="16" aria-label="Выключатель мобильного меню">
                     <use class="icon-menu" href="./images/svg/icons.svg#icon-menu"></use>
                 </svg>
-                
             </button>
-            <div class="mobile-menu">
+
+            <div class="mobile-menu" data-menu>
              <div class="container menu-container">
-                <button type="button" class="menu-close-button">
+                <button type="button" class="menu-close-button" data-menu-close>
                     <svg width="18.67" height="18.67" aria-label="Переключатель мобильного меню">
                         <use class="icon-cross" href="./images/svg/icons.svg#icon-cross"></use>
                     </svg>
@@ -499,6 +499,7 @@
             </div>
             </div>
             
+            <!-- модальне вікно -->
             <script src="./js/modal.js"></script>
             
             
@@ -514,6 +515,11 @@
                     });
                 })();
             </script>
+
+            <!-- мобільне меню -->
+
+            <script src="./js/menu.js"></script>
+            
             </body>
             
             </html>
