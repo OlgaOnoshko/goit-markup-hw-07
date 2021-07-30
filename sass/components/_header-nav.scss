@@ -46,3 +46,40 @@
     }
   }
 }
+
+// хедер мобілка
+
+.header__nav {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
+}
+
+// навігація меню для мобілки
+.nav-list {
+  margin-bottom: 302px;
+}
+
+.nav-list__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.nav-list__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  text-decoration: none;
+  color: var(--logo-color);
+
+  &:hover {
+    color: var(--blue-accent);
+  }
+}
+.nav-list__link--current {
+  color: var(--blue-accent);
+}
